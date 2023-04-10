@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+footer {
+    width: 100vw;
+    background-color: rgb(227, 226, 226);
+    display: flex;
+    justify-content:center  ;
+    
+}
+
+
+.footer-div {
+    width: 20%;
+    margin: 0 20px 20px 20px;
+}
+
+.footer-title {
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 20px 0 10px 0;
+}
+
+.footer-content {
+    font-size: 14px;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-content-support{
+    margin: 15px 0;
+}
+
+.footer-content-support a{
+    color: #333;
+    font-weight: 300;
+}
+
+.footer-content-aboutus{
+    margin: 15px 0;
+    color: #333;
+    font-weight: 300;
+}
+
+.footer-content-aboutus strong {
+    font-weight: 600;
+    color: #333;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.address a {
+    color: #333;
+    margin: 0 0 5px 0;
+}
+
+.address strong {
+    margin-left : 5px;
+}
+
+.img-responsive {
+    width: 150px;
+    height: 75px;
+}
+
+.img-page {
+    width: 300px;
+    width: 300px;
+    margin-top: 15px;
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{ 
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.wrapper {
+    border: 1px solid#989393;
+    width: 600px;
+}
+
+.nav{
+    border-bottom: 2px solid #cccccc63;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(146, 146, 146, 0.14);
+}
+
+.nav a.active, .nav a:hover {
+    border-bottom: 2px solid #10a2f7;
+}
+
+.nav a {
+    width: 50%;
+    float: left;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    color: #333;
+}
+
+.validate {
+    padding: 20px;
+}
+
+.form-group{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group input{
+    padding:8px 12px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #a29e9e;
+    border-top: 1px solid #eae5e5;
+    /* border-right: 1px solid #d3cccc;
+    border-left: 1px solid #d3cccc;  */
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 1px 1px rgba(146, 146, 146, 0.14);
+    overflow: hidden;
+}
+
+.btnLogin{
+    text-transform: uppercase;
+    font-size: 18px;
+    background: -webkit-linear-gradient(top,#f59000,#fd6e1d);
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 4px;
+    border: 2px solid#fd6e1d ;
+}
+
+
+
+
+
+ 
+
+
+
+
