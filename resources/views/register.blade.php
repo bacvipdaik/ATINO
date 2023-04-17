@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/register.css">
-    <title>Document</title>
+    <title>register</title>
 </head>
 <body>
     <main>
         <div class="wrapper">
                 <div class="nav">
-                    <a href="{{ route('login')}}">Đăng nhập</a>
-                    <a href="{{ route('register')}}">Đăng ký</a>
+                    <a class="nav-login" href="{{ route('login')}}">Đăng nhập</a>
+                    <a class="nav-register" href="{{ route('register')}}">Đăng ký</a>
                 </div>
             <form action="" class="validate">
                 <div class="form-group">

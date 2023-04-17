@@ -6,38 +6,32 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-.container {
-    padding: 20px 40px;
+.padding-rl-40 {
+    padding: 40px;
 }
 
-.title {
-    margin: 0 0 30px;
+.titleCategoty{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.filter {
     display: flex;
+    margin:10px 0 30px ;
+}
+
+.filter span {
+    font-size:15px;
     text-transform: uppercase;
+    margin-right: 15px;
+    padding: 10px 0;
 }
 
-.title-a{
-    font-size: 30px;
+.option span {
     font-weight: 700;
 }
-
-.tab-title {
-    display: flex;
-    width: 50%;
-    margin: 0 0 0 30px;
-    list-style: none;
-    justify-content: space-between;
-}
-
-.tab-title-item {
-    float: left;
-    margin: 15px 25px 0 0; 
-    font-size: 14px;
-    font-weight: 700;
-}
-
-.tab-title-item a{
-    padding: 0 0 5px;
+.groupFilter {
+    padding: 10px 0;
 }
 
 a {

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
 Route::get('/login', function () {
     return view('login');
@@ -24,3 +24,19 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('register');
 })->name('register');
+
+Route::get('/category', function () {
+    return view('category');
+})->name('category');
+
+Route::get('/productdetail', function () {
+    return view('productDetails');
+})->name('productdetail');
+
+Route::get('/payments', function () {
+    return view('payments');
+})->name('payments');
+
+Route::get('/cart', function () {
+    return view('cart');
+})->name('cart');

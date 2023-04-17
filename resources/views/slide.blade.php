@@ -1,4 +1,4 @@
-<body>
+
     <div class="slideshow-container">
         <div class="mySlides face">
             <img src="assets/images/anh1.jpeg" style: width=100%>

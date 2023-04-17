@@ -28,6 +28,7 @@ main{
     box-shadow: 0 1px 3px rgba(146, 146, 146, 0.14);
 }
 
+
 .nav a.active, .nav a:hover {
     border-bottom: 2px solid #10a2f7;
 }
@@ -42,6 +43,11 @@ main{
     padding: 5px 10px;
     border-bottom: 2px solid transparent;
     color: #333;
+}
+
+.nav .nav-register{
+    border: none;
+    border-bottom: 2px solid #10a2f7;
 }
 
 .validate {
