@@ -40,3 +40,7 @@ Route::get('/payments', function () {
 Route::get('/cart', function () {
     return view('cart');
 })->name('cart');
+
+Route::get('/acount', function () {
+    return view('acount');
+})->name('acount');
