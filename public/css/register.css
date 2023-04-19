@@ -73,6 +73,11 @@ main{
     overflow: hidden;
 }
 
+.form-group input:focus{
+    border-color: #66afe9;
+    box-shadow:0 0 8px rgba(102,175,233,.6);
+}
+
 .btnLogin{
     text-transform: uppercase;
     font-size: 18px;
@@ -83,11 +88,13 @@ main{
     border: 2px solid#fd6e1d ;
 }
 
-
-
-
-
- 
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+  
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
 
 
 

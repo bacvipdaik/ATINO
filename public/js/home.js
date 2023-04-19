@@ -4,7 +4,7 @@ const newProducts = [
         urlSub1: '../assets/images/newProducts/polo1.jpeg',
         urlSub2: '../assets/images/newProducts/polo2.jpeg',
         name: 'Áo polo 1',
-        price: '200000đ',
+        price: '200000',
     },
 
     {
@@ -12,7 +12,7 @@ const newProducts = [
         urlSub1: '../assets/images/newProducts/polo3.jpeg',
         urlSub2: '../assets/images/newProducts/polo4.jpeg',
         name: 'Áo polo 2',
-        price: '200000đ',
+        price: '200000',
     },
 
     {
@@ -20,7 +20,7 @@ const newProducts = [
         urlSub1: '../assets/images/newProducts/polo5.jpeg',
         urlSub2: '../assets/images/newProducts/polo6.jpeg',
         name: 'Áo polo 3',
-        price: '200000đ',
+        price: '200000',
     },
 
     {
@@ -28,7 +28,7 @@ const newProducts = [
         urlSub1: '../assets/images/newProducts/polo7.jpeg',
         urlSub2: '../assets/images/newProducts/polo8.jpeg',
         name: 'Áo polo 4',
-        price: '200000đ',
+        price: '200000',
     },
 
     {
@@ -36,7 +36,7 @@ const newProducts = [
         urlSub1: '../assets/images/newProducts/polo9.jpeg',
         urlSub2: '../assets/images/newProducts/polo10.jpeg',
         name: 'Áo polo 5',
-        price: '200000đ',
+        price: '200000',
     },
 
     {
@@ -44,7 +44,7 @@ const newProducts = [
         urlSub1: '../assets/images/newProducts/polo11.jpeg',
         urlSub2: '../assets/images/newProducts/polo12.jpeg',
         name: 'Áo polo 6',
-        price: '200000đ',
+        price: '200000',
     },
 
     {
@@ -52,7 +52,7 @@ const newProducts = [
         urlSub1: '../assets/images/newProducts/polo13.jpeg',
         urlSub2: '../assets/images/newProducts/polo14.jpeg',
         name: 'Áo polo 7',
-        price: '200000đ',
+        price: '200000',
     },
 
     {
@@ -60,7 +60,7 @@ const newProducts = [
         urlSub1: '../assets/images/newProducts/polo15.jpeg',
         urlSub2: '../assets/images/newProducts/polo16.jpeg',
         name: 'Áo polo 8',
-        price: '200000đ',
+        price: '200000',
     },
 ]
 const container = document.getElementById('productList')
@@ -88,7 +88,7 @@ newProducts.forEach(function (product) {
                         <a id="product-name" href="">${product.name}</a>
                         </h3>
                         <div class="box-pro-price">
-                            <p id="product-price" class="pro-price">${product.price}</p>
+                            <p id="product-price" class="pro-price">${product.price}₫</p>
                         </div>
                     </div>
                 </div>

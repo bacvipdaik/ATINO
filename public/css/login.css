@@ -66,6 +66,8 @@ main{
     outline: none;
 }
 
+
+
 .btnLogin{
     text-transform: uppercase;
     font-size: 18px;
@@ -121,3 +123,12 @@ main{
 .option .google {
     background-color: #333
 }
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+  }
+  
+  .form-group.invalid .form-message {
+    color: #f33a58;
+  }
+

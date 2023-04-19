@@ -15,12 +15,14 @@
                     <a class="nav-login" href="{{ route('login')}}">Đăng nhập</a>
                     <a class="nav-register" href="{{ route('register')}}">Đăng ký</a>
                 </div>
-            <form action="" class="validate">
+            <form action="" class="validate" id="form-login" method="POST">
                 <div class="form-group">
-                    <input type="text" class="email" placeholder="Nhập email hoặc Tên đăng nhập">
+                    <input id="email" name="email" type="text" class="email" placeholder="Nhập email hoặc Tên đăng nhập">
+                    <span class="form-message"></span>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="password" placeholder="Mật khẩu">
+                    <input id="password" name="password" type="password" class="password" placeholder="Mật khẩu">
+                    <span class="form-message"></span>
                 </div>
                 <button class="btnLogin">đăng nhập</button>
                 <div class="foot">
@@ -40,5 +42,20 @@
             </form>
         </div>
     </main>
+    <script src="js/validateInput.js"></script>
+    <script>
+        Validator({
+            form: '#form-login',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isEmail('#email', 'Vui lòng nhập email của bạn'),
+                Validator.minlength('#password', 6 , 'Mật khẩu tối thiểu 6 kí tự'),
+            ],
+            onSubmit: function(data) {
+                console.log(data);
+            }
+        })
+    </script>
 </body>
 </html>

@@ -12,7 +12,7 @@
     <div class="wrapper">
         <div class="content">
             <div class="wrap">
-                <form action="" class="myform">
+                <form action="" class="myform" id="form-payment">
                     <div class="main">
                         <div class="main-heard">
                             <a href="{{ route('home')}}" class="logo">
@@ -34,71 +34,86 @@
                                 <div class="section-content">
                                     <div class="section-info">
                                         <div class="field">
-                                            <div class="">
-                                                <input class="input-name" type="text" placeholder="Họ và tên">
-                                            </div>
-                                        </div>
-                                        <div class="field field-email">
-                                            <div class="">
-                                                <input class="input-email" type="text" placeholder="Email">
-                                            </div>
-                                        </div>
-                                        <div class="field field-phonenumber">
-                                            <div class="">
-                                                <input class="input-phone" type="text" placeholder="Số điện thoại">
+                                            <div class="form-group">
+                                                <input id="fullname" name="fullname" type="text" class="input-name form-control" placeholder="Họ và tên">
+                                                <span class="form-message"></span>
                                             </div>
                                         </div>
                                         <div class="field ">
-                                            <div class="">
-                                                <input class="input-address" type="text" placeholder="Địa chỉ">
+                                            <div class="form-group">
+                                                <input id="email" name="email" class="input-email form-control" type="text" placeholder="Email">
+                                                <span class="form-message"></span>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="form-group">
+                                                <input id="phone" name="phone" class="input-phone form-control" type="text" placeholder="Số điện thoại">
+                                                <span class="form-message"></span>
+                                            </div>
+                                        </div>
+                                        <div class="field ">
+                                            <div class="form-group">
+                                                <input id="address" name="address" class="input-address form-control" type="text" placeholder="Địa chỉ">
+                                                <span class="form-message"></span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="section-address">
                                         <div class="field field-address">
-                                            <div class="field-input-wrapper" >
+                                            <div class="field-input-wrapper form-group" >
                                                 <label for="">Tỉnh/Thành phố</label>
-                                                <select name="" id="">
-                                                    <option value="">Hà Nội</option>
-                                                    <option value="">Hà Nội</option>
-                                                    <option value="">Hà Nội</option>
-                                                    <option value="">Hà Nội</option>
-                                                    <option value="">Hà Nội</option>
+                                                <select name="city" id="city" class="form-control">
+                                                    <option value="">--Chọn tỉnh thành phố--</option>
+                                                    <option value="Hà Nội">Hà Nội</option>
+                                                    <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+                                                    <option value="Hà Nam">Hà Nam</option>
+                                                    <option value="Thái Bình">Thái Bình</option>
+                                                    <option value="Bắc Ninh">Bắc Ninh</option>
                                                 </select>
+                                                <span class="form-message"></span>
                                             </div>
                                         </div>
                                         <div class="field field-address">
-                                            <div class="field-input-wrapper" >
+                                            <div class="field-input-wrapper form-group" >
                                                 <label for="">Quận/Huyện</label>
-                                                <select name="" id="">
-                                                    <option value="">Hà Nội</option>
+                                                <select name="County" id="County" class="form-control">
+                                                    <option value="">--Chọn quận huyện--</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
                                                 </select>
+                                                <span class="form-message"></span>
                                             </div>
                                         </div>
                                         <div class="field field-address">
-                                            <div class="field-input-wrapper" >
+                                            <div class="field-input-wrapper form-group" >
                                                 <label for="">Phường/Xã</label>
-                                                <select name="" id="">
-                                                    <option value="">Hà Nội</option>
-                                                    <option value="">Hà Nội</option>
-                                                    <option value="">Hà Nội</option>
-                                                    <option value="">Hà Nội</option>
-                                                    <option value="">Hà Nội</option>
+                                                <select name="Ward" id="Ward" class="form-control">
+                                                    <option value="">--Chọn phường xã--</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
                                                 </select>
+                                                <span class="form-message"></span>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="field">
-                                        <textarea class="note" name="" id="" cols="30" rows="6" placeholder="Ghi chú"></textarea>
+                                        <textarea class="note" name="note" id="note" cols="30" rows="6" placeholder="Ghi chú"></textarea>
                                     </div>
                                     <div class="field">
                                         <div>
                                             <h2 class="payment-methods">Phương thức thanh toán</h2>
                                         </div>
                                         <div class="content-box">
-                                            <label for="">
-                                                <input type="radio">
+                                            <label for="" class="form-group">
+                                                <input name="method-payment" type="radio" value="1">
                                                 <span>Thanh toán khi nhận hàng &#40;COD&#41;</span>
+                                                <span class="form-message"></span>
                                             </label>
                                             <div class="decription-payment">
                                                 <span>Thanh toán khi nhận hàng</span>
@@ -169,7 +184,7 @@
                                     <div class="order-summary-sections-discount">
                                         <div class="">
                                             <div class="field wrap-discount">
-                                                <input type="text" name="" id="" placeholder="Mã giảm giá">
+                                                <input type="text" name="discount" id="discount" placeholder="Mã giảm giá">
                                                 <button>Sử dụng</button>
                                             </div>
                                         </div>
@@ -198,5 +213,26 @@
             </div>
         </div>
     </div>
+    <script src="js/validateInput.js"></script>
+    <script>
+        Validator({
+            form: '#form-payment',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#fullname', 'Vui lòng nhập đầy đủ tên của bạn'),
+                Validator.isEmail('#email', 'Vui lòng nhập email của bạn'),
+                Validator.isphone('#phone', 'Vui lòng nhập sđt của bạn'),
+                Validator.isRequired('#address', 'Vui lòng nhập địa chỉ của bạn'),
+                Validator.isRequired('input[name="method-payment"]', 'Vui lòng chọn phương thức thanh toán'),
+                Validator.isRequired('#city', 'Chọn tỉnh của bạn'),
+                Validator.isRequired('#County','Chọn huyện của bạn'),
+                Validator.isRequired('#Ward','Chọn xã của bạn'),
+            ],
+            onSubmit: function(data) {
+                console.log(data);
+            }
+        })
+    </script>
 </body>
 </html>

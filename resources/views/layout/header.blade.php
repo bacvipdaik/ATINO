@@ -11,7 +11,7 @@
             </a>
         </div>
         <div class="contact-bag">
-            <a href="" type="button" id="bag">
+            <a href="{{route('cart')}}" type="button" id="bag">
                 <i class="fa-solid fa-bag-shopping" style="color: #66686b;"></i>
                 <span>Giỏ hàng</span>
             </a>
@@ -133,10 +133,10 @@
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
     </div>
-    <script>
+    {{-- <script>
         const elementbag = document.getElementById('bag')
         elementbag.addEventListener('click', event => {
             event.preventDefault();
         })
-    </script>
+    </script> --}}
 </header>
